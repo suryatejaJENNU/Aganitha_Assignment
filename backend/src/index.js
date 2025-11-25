@@ -31,7 +31,7 @@ app.set("io", io);
 
 // ROUTES
 app.use("/api/links", linksRouter);
-app.use("/healthz", healthRouter);
+app.use("/", healthRouter);
 app.use("/", redirectRouter);
 
 // START SERVER
