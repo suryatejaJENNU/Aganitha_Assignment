@@ -1,4 +1,4 @@
-📘 TinyLink — URL Shortener with Real-Time Stats
+# 📘 TinyLink — URL Shortener with Real-Time Stats
 
 A production-ready, fully responsive URL shortener built with React, Tailwind, Node.js, Express, Neon Postgres, and Socket.IO.
 Supports URL shortening, custom codes, redirects, analytics, deletion, and system health checks — following the exact assignment specification.
@@ -20,7 +20,7 @@ Supports URL shortening, custom codes, redirects, analytics, deletion, and syste
 
 
 
-🎯 Features
+# 🎯 Features
 🔗 URL Shortening
 
 Create shortened URLs
@@ -31,7 +31,7 @@ Validate URLs before saving
 
 Prevent duplicate custom codes
 
-🔁 Redirection
+# 🔁 Redirection
 
 /:code → 302 redirect to the original URL
 
@@ -41,7 +41,7 @@ total_clicks
 
 last_clicked_at
 
-📊 Dashboard
+# 📊 Dashboard
 
 View all shortened links
 
@@ -59,7 +59,7 @@ Scrollable table with fixed height
 
 Real-time update when click count changes
 
-🧾 Stats Page /code/:code
+# 🧾 Stats Page /code/:code
 
 Shows:
 
@@ -77,7 +77,7 @@ Copy short URL button
 
 Real-time updates via Socket.IO
 
-❤️ Health Page /health
+# ❤️ Health Page /health
 
 Displays system uptime
 
@@ -85,13 +85,13 @@ API health status
 
 Version info
 
-⚡ Real-Time Updates
+# ⚡ Real-Time Updates
 
 When anyone visits a short URL, Dashboard + StatsPage update instantly.
 
 Implemented using Socket.IO without polling.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 Frontend
 
 React (Vite)
@@ -118,7 +118,8 @@ pg (Database driver)
 
 Render hosting
 
-📁 Project Structure
+# 📁 Project Structure
+```text
 Backend (/backend)
 backend/
 │
@@ -169,8 +170,9 @@ frontend/
 │
 ├── package.json
 └── vite.config.js
-
-⚙️ Environment Setup
+```
+# ⚙️ Environment Setup
+```text
 Backend .env
 PORT=4000
 DATABASE_URL=postgresql://<neon-connection-string>
@@ -246,8 +248,9 @@ socket.on("click_updated", (data) => {
       loadStats();
    }
 });
+```
 
-💻 Running Locally
+# 💻 Running Locally
 Backend
 cd backend
 npm install
@@ -258,7 +261,7 @@ cd frontend
 npm install
 npm run dev
 
-🌐 Deployment Instructions
+# 🌐 Deployment Instructions
 Netlify (Frontend)
 Add _redirects file:
 
@@ -276,12 +279,8 @@ Add environment variables
 
 Link Neon database
 
-🖼️ Screenshots (optional)
-![Dashboard](screenshots/dashboard.png)
-![Stats](screenshots/stats.png)
-![Health](screenshots/health.png)
 
-👤 Author
+# 👤 Author
 
 Jennu Suryateja
 full stack developer
