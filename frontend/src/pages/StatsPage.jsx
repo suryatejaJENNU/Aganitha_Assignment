@@ -4,7 +4,7 @@ import LoadingSpinner from "../components/LoadingSpinner";
 import { useNotification } from "../components/NotificationProvider";
 import { io } from "socket.io-client";
 
-const socket = io(import.meta.env.VITE_API_BASE_URL || "https://aganitha-assignment.onrender.com");
+const socket = io(import.meta.env.VITE_API_BASE_URL || "http://localhost:4000");
 
 
 function timeAgo(dateString) {
